@@ -15,7 +15,7 @@ import Education from "../section/Education"
 const Home = () => {
   return (
    
-        <main className="">
+        <main>
      
             <Hero />
             <AboutMe />

@@ -10,22 +10,22 @@ const Hero = () => {
     >
       <Navbar />
 
-      <div className="relative top-8 z-10 w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
-        <div className="relative w-[160px] h-[160px] sm:w-[280px] sm:h-[280px] md:w-[400px] md:h-[400px] p-4 md:p-5 bg-gray-800 rounded-full ml-4 shadow-xl shadow-yellow-500/50">
+      <div className="relative top-14 z-10 w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+        <div className="relative w-[150px] h-[150px] sm:w-[280px] sm:h-[280px] md:w-[400px] md:h-[400px] p-4 md:p-5 bg-gray-800 rounded-full ml-4 shadow-xl shadow-yellow-500/50">
           <img
             src={ew}
             alt="Abbas"
-            className="object-cover absolute w-[220px] h-[220px]  -top-[60px] lg:w-[530px] lg:h-[530px] lg:-top-[130px] rounded-b-full"
+            className="object-cover absolute w-[180px] h-[180px]  -top-[30px] lg:w-[530px] lg:h-[530px] lg:-top-[130px] rounded-b-full"
           />
         </div>
       </div>
 
       <div className="relative z-10 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-3 sm:space-y-5 px-4 sm:px-6 md:px-9">
-        <h1 className="text-lg sm:text-2xl p-2 animate-pulse rounded-lg font-extrabold text-gray-100">
+        <h1 className="text-lg sm:text-2xl p-2 mt-7 animate-pulse rounded-lg font-extrabold text-gray-100">
           Hi, I'm Abbas Omer 👋
         </h1>
         <p className="text-xl sm:text-2xl lg:text-3xl p-2 font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">
-          I'm a front-end developer, and I like what I do.
+          I'm a full-stack development , and I like what I do.
         </p>
 
         <div className="flex space-x-3">
