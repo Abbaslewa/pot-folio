@@ -20,7 +20,6 @@ const Certifications = () => {
     <div id="education" className="flex flex-col items-center justify-center min-h-screen bg-gray-700 py-4 px-2">
       <div className="grid grid-cols-1 gap-6 w-full max-w-3xl text-white rounded-lg p-4">
         
-        {/* Certifications Section */}
         <div className="certifications font-extrabold">
           <h2 className="text-2xl font-bold mb-2 text-center text-yellow-400">Education</h2>
           
@@ -41,7 +40,6 @@ const Certifications = () => {
           </ul>
         </div>
 
-        {/* Education Journey Section */}
         <div className="education-journey">
           <h3 className="text-xl font-semibold text-yellow-300 mb-2 text-center">My Education Story</h3>
           

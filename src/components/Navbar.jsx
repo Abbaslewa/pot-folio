@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,8 +17,21 @@ const Nav = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode'); 
+    } else {
+      document.body.classList.remove('dark-mode'); 
+    }
+  }, [isDarkMode]);
+
+ 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
   };
 
   return (
@@ -26,11 +40,14 @@ const Nav = () => {
         isScrolled ? 'bg-black bg-opacity-80 shadow-lg' : 'bg-transparent'
       }`}
     >
-      <a href="/" className="
- text-yellow-600 text-2xl text-center rounded-lg w-[150px] border border-yellow-600 sm:text-3xl font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">
+      <a href="/" className="text-yellow-600 text-2xl text-center rounded-lg w-[150px] border border-yellow-600 sm:text-3xl font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">
         ABBAS
       </a>
+      <button onClick={toggleDarkMode} className="text-2xl text-white mr-4 md:mr-8 focus:outline-none">
+        {isDarkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
+      </button>
 
+   
       <div className="md:hidden">
         {isMenuOpen ? (
           <FaTimes className="text-2xl text-white cursor-pointer" onClick={toggleMenu} />
@@ -52,7 +69,7 @@ const Nav = () => {
           <a href="#home" className="text-3xl text-white my-4" onClick={toggleMenu}>Home</a>
           <a href="#about" className="text-3xl text-white my-4" onClick={toggleMenu}>About Me</a>
           <a href="#skills" className="text-3xl text-white my-4" onClick={toggleMenu}>Skills</a>
-          <a href="contact" className="text-3xl text-white my-4" onClick={toggleMenu}>Contact Me</a>
+          <a href="#contact" className="text-3xl text-white my-4" onClick={toggleMenu}>Contact Me</a>
           <a href="#contact" className="text-3xl text-white my-4" onClick={toggleMenu}>Hire Me</a>
         </div>
       )}

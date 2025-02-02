@@ -24,3 +24,17 @@ html {
     }
 }
 
+
+body.dark-mode {
+    background-color: #121212; 
+    color: #ffffff;         
+  }
+ 
+  .dark-mode a {
+    color: #ffffff;
+  }
+  
+  .dark-mode nav {
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
+  
