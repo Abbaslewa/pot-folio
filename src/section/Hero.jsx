@@ -15,7 +15,7 @@ const Hero = () => {
           <img
             src={ew}
             alt="Abbas"
-            className="object-cover absolute w-[180px] h-[180px]  -top-[30px] lg:w-[530px] lg:h-[530px] lg:-top-[130px] rounded-b-full"
+            className="object-cover absolute w-[180px] h-[180px]  -top-[30px] lg:w-[470px] lg:h-[470px] lg:-top-[70px] -rotate-3 rounded-b-full"
           />
         </div>
       </div>
