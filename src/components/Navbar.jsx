@@ -40,7 +40,7 @@ const Nav = () => {
         isScrolled ? 'bg-black bg-opacity-80 shadow-lg' : 'bg-transparent'
       }`}
     >
-      <a href="/" className="text-yellow-600 text-2xl text-center rounded-lg w-[150px] border border-yellow-600 sm:text-3xl font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">
+      <a href="/" className="text-yellow-600 text-2xl text-center rounded-lg w-[110px] border border-yellow-600 sm:text-3xl font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">
         ABBAS
       </a>
       <button onClick={toggleDarkMode} className="text-2xl text-white mr-4 md:mr-8 focus:outline-none">

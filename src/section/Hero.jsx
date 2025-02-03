@@ -24,7 +24,7 @@ const Hero = () => {
         <h1 className="text-lg sm:text-2xl p-2 mt-7 animate-pulse rounded-lg font-extrabold text-gray-100">
           Hi, I'm Abbas Omer 👋
         </h1>
-        <p className="text-xl sm:text-2xl lg:text-3xl p-2 font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">
+        <p className="lg:text-2xl  font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">
           I'm a full-stack development , and I like what I do.
         </p>
 
@@ -51,7 +51,7 @@ const Hero = () => {
           <a
             href="Abbas_CVF.pdf"
             download="Abbas_CVF.pdf"
-            className="bg-black hover:bg-gray-800 text-white px-3 py-1.5 rounded-lg shadow-lg transition-colors duration-300 ease-in-out flex items-center animate-bounce"
+            className="bg-black  hover:bg-gray-800 text-white px-3 py-1.5 rounded-lg shadow-lg transition-colors duration-300 ease-in-out flex items-center animate-bounce"
             aria-label="Download Abbas's Resume"
           >
             <FaDownload className="inline mr-1.5" />
@@ -89,7 +89,7 @@ const Hero = () => {
             <h3 className="text-lg font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">
               10+
             </h3>
-            <p className="text-sm">Happy Clients</p>
+            <p className="text-sm ">Happy Clients</p>
           </div>
         </div>
       </div>
